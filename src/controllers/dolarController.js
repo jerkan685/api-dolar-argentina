@@ -1,6 +1,6 @@
 const getInfoApi = require('../api/service-dolar');
 
-const {formatedFecha} = require('../util/util');
+const {formatedFecha, formatedEvolucion} = require('../util/util');
 
 
 /**
@@ -102,7 +102,7 @@ const getDolarTurista = async (req, resp) => {
  const getEvolucionDolarOficial = async (req, resp) => {
     try {
      const data = await getInfoApi();
-     const values = data.cotiza.evolucion_dolar.oficial.anio
+     const values = formatedEvolucion(data.cotiza.evolucion_dolar.oficial.anio)
      resp.send(values);
     } catch (error) {
      console.log(error);
@@ -120,5 +120,6 @@ module.exports = {
     getDolarCCL,
     getDolarMep,
     getDolarTurista,
+    getEvolucionDolarOficial,
     getAllInfo
 };
