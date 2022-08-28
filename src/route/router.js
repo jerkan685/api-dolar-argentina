@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getDolarOficcer} = require('../controllers/dolarController')
+const {getDolarOficcer, getDolarBlue} = require('../controllers/dolarController')
 
 
 /**
@@ -8,7 +8,7 @@ const {getDolarOficcer} = require('../controllers/dolarController')
  */
 
 router.get('/app/dolarOficial',getDolarOficcer);
-
+router.get('/app/dolarBlue', getDolarBlue);
 
 
 
