@@ -1,0 +1,23 @@
+{
+  "name": "api-dolar-blue",
+  "version": "1.0.0",
+  "description": "api para consultar el precio del dolar",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "serve": "nodemon app.js"
+  },
+  "author": "jerkan araujo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^6.0.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
