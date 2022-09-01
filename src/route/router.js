@@ -42,11 +42,6 @@ router.get('/app/evolucionDolarBlue', getEvolucionDolarBlue);
  router.get('/app/dolarBanco/SuperVielle',getDolarSupervielle);
 
 
-/**
- * @description obtenemos informacion del riesgo pais
- */
-
-
 
 
 
