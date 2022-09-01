@@ -110,6 +110,17 @@ const getDolarTurista = async (req, resp) => {
     }
 };
 
+const getEvolucionDolarBlue = async (req, resp) => {
+    try {
+     const data = await getInfoApi();
+     const values = formatedEvolucion(data.cotiza.evolucion_dolar.blue.anio)
+     resp.send(values);
+    } catch (error) {
+     console.log(error);
+     resp.status(500).send({mgsError: error});
+    }
+};
+
 
 
 
@@ -121,5 +132,6 @@ module.exports = {
     getDolarMep,
     getDolarTurista,
     getEvolucionDolarOficial,
+    getEvolucionDolarBlue,
     getAllInfo
 };
