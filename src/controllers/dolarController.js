@@ -27,6 +27,7 @@ const getDolarOficcer = async (req, resp) => {
         dateConsult: formatedFecha(),
         buy: data.cotiza.Dolar.casa344.compra._text,
         sell: data.cotiza.Dolar.casa344.venta._text,
+        variation: data.cotiza.valores_principales.casa349.variacion._text
      };
      resp.send(values);
     } catch (error) {
@@ -42,6 +43,7 @@ const getDolarBlue = async (req, resp) => {
         dateConsult: formatedFecha(),
         buy: data.cotiza.Dolar.casa380.compra._text,
         sell: data.cotiza.Dolar.casa380.venta._text,
+        variation: data.cotiza.valores_principales.casa310.variacion._text
      };
      resp.send(values);
     } catch (error) {
@@ -57,6 +59,7 @@ const getDolarCCL = async (req, resp) => {
         dateConsult: formatedFecha(),
         buy: data.cotiza.Dolar.casa312.compra._text,
         sell: data.cotiza.Dolar.casa312.venta._text,
+        variation: data.cotiza.valores_principales.casa312.variacion._text
      };
      resp.send(values);
     } catch (error) {
@@ -72,6 +75,7 @@ const getDolarMep = async (req, resp) => {
         dateConsult: formatedFecha(),
         buy: data.cotiza.Dolar.casa313.compra._text,
         sell: data.cotiza.Dolar.casa313.venta._text,
+        variation: data.cotiza.valores_principales.casa313.variacion._text
      };
      resp.send(values);
     } catch (error) {
@@ -87,6 +91,7 @@ const getDolarTurista = async (req, resp) => {
         dateConsult: formatedFecha(),
         buy: data.cotiza.Dolar.casa406.compra._text,
         sell: data.cotiza.Dolar.casa406.venta._text,
+        variation: data.cotiza.valores_principales.casa406.variacion._text
      };
      resp.send(values);
     } catch (error) {
